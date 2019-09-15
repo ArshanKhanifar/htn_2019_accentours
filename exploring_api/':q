@@ -1,0 +1,7 @@
+import requests
+
+response = requests.get("http://accentour-final-silver.uedpnpkwfs.us-east-2.elasticbeanstalk.com/get_all_tours")
+
+for d in response.json:
+    print(d)
+
